@@ -1,10 +1,11 @@
 package com.mycompany.fintrack.model;
 import java.time.Month;
+import java.time.LocalDate;
 
 public class TransacaoMensal extends Transacao{
     private Month mes;
-    public TransacaoMensal(String descricao, double valor, String tipo, Month mes){
-        super(descricao, valor, tipo);
+    public TransacaoMensal(String descricao, double valor, TipoTransacao tipo, LocalDate data, Month mes){
+        super(descricao, valor, tipo, data);
         this.mes = mes;
     }
 
@@ -17,6 +18,6 @@ public class TransacaoMensal extends Transacao{
     }
     @Override
     public String toString(){
-        return super.toString() + " mês: " + mes;
+        return super.toString() + "\n mês: " + mes;
     }
 }
