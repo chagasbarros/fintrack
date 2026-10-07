@@ -15,3 +15,6 @@ nbactions.xml
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Banco de dados local (SQLite)
+*.db
