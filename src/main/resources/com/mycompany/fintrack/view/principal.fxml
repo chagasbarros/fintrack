@@ -46,14 +46,13 @@
     <!-- Base: botoes de acao -->
     <bottom>
         <HBox spacing="10" alignment="CENTER_LEFT">
-            <!-- Nova, Editar e Relatorio serao ligados as telas da Parte 6 -->
-            <Button fx:id="btnNova" text="Nova transacao" styleClass="botao-principal" disable="true">
-                <tooltip><Tooltip text="Disponivel na Parte 6"/></tooltip>
+            <Button fx:id="btnNova" text="Nova transacao" styleClass="botao-principal"/>
+            <Button fx:id="btnEditar" text="Editar">
+                <tooltip><Tooltip text="Tambem e possivel editar com duplo clique na linha"/></tooltip>
             </Button>
-            <Button fx:id="btnEditar" text="Editar" disable="true"/>
             <Button fx:id="btnRemover" text="Remover" styleClass="botao-perigo"/>
             <Region HBox.hgrow="ALWAYS"/>
-            <Button fx:id="btnRelatorio" text="Relatorio" disable="true"/>
+            <Button fx:id="btnRelatorio" text="Relatorio"/>
         </HBox>
     </bottom>
 </BorderPane>
